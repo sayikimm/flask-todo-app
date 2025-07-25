@@ -43,5 +43,5 @@ This project was built as a final project for CS50 and inspired by the everyday 
 
 📫 Contact
 
-For feedback or collaboration: Miki G.
+For feedback or collaboration: 
 📧 [msisay99@gmail.com]
