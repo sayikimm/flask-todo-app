@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Todo List
+{% endblock %}
+
+{% block main %}
+    <h2 class="mb-4">Active Todo List</h2>
+    {% if tasks %}
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Note</th>
+                    <th>Due Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for task in tasks %}
+                    <tr>
+                        <td>{{ task.task }}</td>
+                        <td>{{ task.note if task.note else 'N/A' }}</td>
+                        <td>{{ task.due if task.due else 'N/A' }}</td>
+                        <td>
+                            <!-- Form to mark the task as done -->
+                            <form action="/delete" method="post" style="display: inline;">
+                                <input type="hidden" name="task_id" value="{{ task.id }}">
+                                <button type="submit" class="btn btn-success btn-sm">Mark as Done</button>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No active tasks yet. Why not <a href="/add">add one</a>?</p>
+    {% endif %}
+    <div class="mt-4">
+        <a href="/add" class="btn btn-primary">Add New Task</a>
+        <a href="/done" class="btn btn-info">View Finished Tasks</a>
+    </div>
+{% endblock %}
+ 

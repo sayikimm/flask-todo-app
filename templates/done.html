@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Finished Tasks
+{% endblock %}
+
+{% block main %}
+    <h2 class="mb-4">Finished Todo List</h2>
+    {% if done_tasks %}
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Note</th>
+                    <th>Due Date</th>
+                    <th>Completed On</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for task in done_tasks %}
+                    <tr>
+                        <td>{{ task.task }}</td>
+                        <td>{{ task.note if task.note else 'N/A' }}</td>
+                        <td>{{ task.due if task.due else 'N/A' }}</td>
+                        <td>{{ task.timestamp }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No finished tasks yet. Keep up the good work!</p>
+    {% endif %}
+    <div class="mt-4">
+        <a href="/" class="btn btn-primary">Back to Active Tasks</a>
+        <a href="/add" class="btn btn-secondary">Add New Task</a>
+    </div>
+{% endblock %}
