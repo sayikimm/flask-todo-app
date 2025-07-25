@@ -1,19 +1,47 @@
-# ToDo-List
-#### Video Demo:  https://youtu.be/bhlq30hI9-Q
-#### Description:
-You know that feeling, right? That little flutter of anxiety when your mind is buzzing with a dozen things you absolutely must remember, but they're all just... floating around, untethered. The "I'll definitely remember that later" promises we make to ourselves that inevitably vanish into thin air. Or perhaps it's the frustration of scribbling notes on countless scraps of paper, only to have them disappear into the abyss of your desk. We've all been there – the overwhelm of scattered thoughts, the quiet dread of a forgotten deadline.
+# ✅ Miki – Simple, Secure Flask To-Do List App
 
-That's precisely the everyday challenge we set out to tackle with our Flask To-Do List application. Think of it not just as a piece of software, but as your own personal digital assistant, a calm and organized corner of the internet designed to gently gather all those swirling "to-dos" and give them a home. Our goal was simple: create a straightforward, reliable web app that feels intuitive, makes you feel in control, and genuinely helps you get things done.
+A clean, secure, and easy-to-use web-based To-Do List application built with Flask and SQLite. Designed to help users stay focused, organized, and productive—with a friendly interface and reliable functionality.
 
-From the moment you arrive, we want you to feel secure and ready to focus. We know your tasks are personal, sometimes even sensitive. That's why we built in a secure foundation right from the start. When you register for your new account, you're not just picking a username and password; you're setting up your own private workspace. We've gone the extra mile to ensure that your password is kept completely safe, transforming it into a secure, scrambled code before it ever touches our database. So, when you log in, you can rest easy knowing your personal task sanctuary is just for you. No need to worry about prying eyes or misplaced notes – this space is yours, and your information is protected.
+## 🌟 Features
 
-Once you're in, the magic truly begins. The most empowering part of getting organized is often the simplest: getting things out of your head. With our "Add Task" feature, it’s like a quiet sigh of relief. Just type in what you need to do – "finish that project report," "pick up dry cleaning," "call Mom" – and if you like, add a little note for extra context or a helpful due date to keep you on track. It’s quick, it’s clean, and if you happen to forget the main task, the app will gently remind you, because we all have those moments. Once it’s entered, poof! It’s out of your head and neatly added to your list.
+- ✅ Secure user registration and login (with password hashing)
+- 📝 Add, view, and manage personal tasks
+- 📅 Track tasks by due date in a clean dashboard
+- 🏁 Mark tasks as done and view completed task history
+- 🧠 Fully private, user-specific workspace
 
-Then, you arrive at your personal dashboard – your "Active Tasks" page. This is where clarity reigns. Everything you need to tackle today, tomorrow, or next week is laid out for you in a clear, easy-to-read table. We’ve even made sure your tasks are sorted by their due date, so you can instantly see what needs your attention first. No more rummaging through mental piles; it’s all right there, neatly presented. And that "Mark as Done" button? Oh, that’s the truly satisfying part! There's a real sense of accomplishment that comes with clicking it. With one simple tap, that task seamlessly shifts from "to do" to "done," instantly clearing up your active list and giving you a little burst of motivational energy.
+## 🛠️ Tech Stack
 
-But where do those "done" tasks go? They don't just disappear! We believe in celebrating your wins, big or small. That's why we've created the "Finished Tasks" section. Think of it as your personal hall of fame, a digital trophy case where every completed item is recorded. You can visit this page anytime to see everything you've accomplished, laid out clearly with the date you completed it. It’s a wonderful way to reflect on your productivity, remind yourself of how much you've achieved, and feel genuinely good about the progress you’re making.
+- Backend: Flask (Python)
+- Database: SQLite
+- Frontend: HTML, CSS (Bootstrap), Jinja2
+- Authentication: Werkzeug Security
+- Deployment Ready: Can be hosted on Render, Railway, or Heroku
 
-Behind the friendly interface, this application is powered by some reliable technology. Flask, a lightweight but powerful Python framework, acts as the nimble brain of the operation, making sure everything runs smoothly and efficiently in the background. Your tasks and account details are safely stored in a local SQLite database, which is like your own private digital notebook – always ready, always organized. We've designed the code to be as clean and straightforward as the app itself, ensuring stability and a smooth experience. Every interaction, from logging in to marking a task complete, is handled with care and attention to detail, making sure your task management journey is as frictionless as possible.
+🗂️ Project Structure
 
-Ultimately, our Flask To-Do List app isn't just about checkboxes; it’s about giving you peace of mind. It’s about turning the overwhelming jumble of daily demands into a clear, manageable path forward. It’s about that satisfying moment when you clear a task, the quiet confidence of seeing your accomplishments grow, and the simple joy of knowing you’ve got a reliable digital companion by your side, ready to help you conquer your day, one task at a time.
-i
+.
+├── app.py               # Main Flask app
+├── static/              # CSS, JS files
+├── templates/           # HTML (Jinja2 templates)
+├── database.db          # SQLite database
+├── requirements.txt     # Python dependencies
+
+🔗 Live Demo 
+
+Watch the Video Demo
+https://youtu.be/bhlq30hI9-Q
+
+---
+
+🙌 Acknowledgements
+
+This project was built as a final project for CS50 and inspired by the everyday need for a calm, reliable space to organize thoughts and tasks.
+
+
+---
+
+📫 Contact
+
+For feedback or collaboration: Miki G.
+📧 [msisay99@gmail.com]
