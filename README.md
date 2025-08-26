@@ -20,12 +20,8 @@ The **To-Do List** is a lightweight web-based application built with Flask and S
 
 ## Project Structure
 
-.
-├── app.py               # Main Flask app
-├── static/              # CSS, JS files
-├── templates/           # HTML (Jinja2 templates)
-├── database.db          # SQLite database
-├── requirements.txt     # Python dependencies
+. ├── app.py            # Main Flask application ├── static/           # CSS, JavaScript, and image files ├── templates/        # HTML templates (Jinja2) ├── database.db       # SQLite database file ├── requirements.txt  # Python dependencies
+
 
 ## Live Demo
 
